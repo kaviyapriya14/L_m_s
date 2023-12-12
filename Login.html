@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Login Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="login-form" method="post" action="Login.php" onsubmit="validateForm(event)" novalidate autocomplete="off">
+            <label for="email">Email:</label>
+             <input type="text" id="email" name="email" required autocomplete="off">
+             <div id="email_error" class="error-message"></div><br>
+             <label for="password">Password:</label>
+             <input type="password" id="password" name="password" required autocomplete="off">
+             <div id="password_error" class="error-message"></div><br>
+             <input type="submit" value="Login">
+             <h6 style="display: inline-block;">If you are new user?</h6>
+             <a href="Register.html">Register Here</a>
+        </form>
+        <script src="Login.js"></script>
+    </body>
+</html>
